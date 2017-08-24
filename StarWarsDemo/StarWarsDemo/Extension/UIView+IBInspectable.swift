@@ -1,0 +1,62 @@
+//
+//  UIView+IBInspectable.swift
+//  StarWarsDemo
+//
+//  Created by ljb48229 on 2017/8/24.
+//  Copyright © 2017年 ljb48229. All rights reserved.
+//
+
+import UIKit
+
+
+extension UIView {
+
+    @IBInspectable var cornerRadius: CGFloat {
+        get {
+            return layer.cornerRadius
+        }
+        set {
+            layer.cornerRadius = newValue
+        }
+    }
+    
+    @IBInspectable var borderWidth: CGFloat {
+        get {
+            return layer.borderWidth
+        }
+        set {
+            layer.borderWidth = newValue
+        }
+    }
+    
+    @IBInspectable var borderColor: UIColor? {
+        get {
+            guard let color = layer.borderColor else { return nil }
+            return UIColor(cgColor: color)
+        }
+        set {
+            layer.borderColor = newValue?.cgColor
+        }
+    }
+    
+    func animateCircular(withDuration duration: TimeInterval, center: CGPoint, revert: Bool = false, animations: () -> Void, completion: ((Bool) -> Void)? = nil) {
+        
+        let snapshot = snapshotView(afterScreenUpdates: false)!
+        snapshot.frame = bounds
+        self.addSubview(snapshot)
+        
+        let center = convert(center, to: snapshot)
+        let radius: CGFloat = {
+            let x = max(center.x, frame.width - center.x)
+            let y = max(center.y, frame.height - center.y)
+            return sqrt(x * x + y * y)
+        }()
+//        var animation : 
+        
+        
+    }
+}
+
+
+
+

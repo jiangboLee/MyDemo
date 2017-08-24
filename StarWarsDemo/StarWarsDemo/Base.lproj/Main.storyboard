@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="GothaProReg.otf">
+            <string>GothamPro</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="StarWarsDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mlw-2n-TAj" customClass="StarsOverlay" customModule="StarWarsDemo" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="star_wars_logo" translatesAutoresizingMaskIntoConstraints="NO" id="9ge-Ib-H5U">
+                                        <rect key="frame" x="63" y="133" width="250" height="107"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LeeJiangBo" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aG7-A9-HHp">
+                                        <rect key="frame" x="132" y="312" width="111" height="17"/>
+                                        <fontDescription key="fontDescription" name="GothamPro" family="Gotham Pro" pointSize="19"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Open My Demo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EHv-yu-Ota">
+                                        <rect key="frame" x="121.5" y="337" width="132" height="15.5"/>
+                                        <fontDescription key="fontDescription" name="GothamPro" family="Gotham Pro" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7jV-g3-DqJ" customClass="PrifileButton" customModule="StarWarsDemo" customModuleProvider="target">
+                                        <rect key="frame" x="74" y="387" width="228" height="54"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="54" id="YGP-b8-8BH"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                        <state key="normal" title="GO TO START GAME">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="27"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="1" green="0.90980392156862744" blue="0.12156862745098039" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="7jV-g3-DqJ" firstAttribute="top" secondItem="EHv-yu-Ota" secondAttribute="bottom" constant="35" id="4Y1-ip-mGq"/>
+                                    <constraint firstItem="9ge-Ib-H5U" firstAttribute="top" secondItem="Mlw-2n-TAj" secondAttribute="top" constant="133" id="ABA-ie-37L"/>
+                                    <constraint firstItem="9ge-Ib-H5U" firstAttribute="centerX" secondItem="Mlw-2n-TAj" secondAttribute="centerX" id="Cno-a3-Sjy"/>
+                                    <constraint firstItem="7jV-g3-DqJ" firstAttribute="centerX" secondItem="Mlw-2n-TAj" secondAttribute="centerX" id="N17-7i-eGS"/>
+                                    <constraint firstItem="EHv-yu-Ota" firstAttribute="top" secondItem="aG7-A9-HHp" secondAttribute="bottom" constant="8" id="YgT-cK-UC4"/>
+                                    <constraint firstItem="aG7-A9-HHp" firstAttribute="top" secondItem="9ge-Ib-H5U" secondAttribute="bottom" constant="72" id="j4d-lf-Kdl"/>
+                                    <constraint firstItem="EHv-yu-Ota" firstAttribute="centerX" secondItem="Mlw-2n-TAj" secondAttribute="centerX" id="sx7-89-zVJ"/>
+                                    <constraint firstItem="aG7-A9-HHp" firstAttribute="centerX" secondItem="Mlw-2n-TAj" secondAttribute="centerX" id="w9u-cx-nqf"/>
+                                    <constraint firstItem="7jV-g3-DqJ" firstAttribute="top" secondItem="Mlw-2n-TAj" secondAttribute="top" priority="250" constant="-100" id="wHn-Zq-AcM"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Mlw-2n-TAj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="a9y-Ax-cKf"/>
+                            <constraint firstItem="Mlw-2n-TAj" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="b09-Hk-fSF"/>
+                            <constraint firstAttribute="bottom" secondItem="Mlw-2n-TAj" secondAttribute="bottom" id="jgY-Qz-4K5"/>
+                            <constraint firstAttribute="trailing" secondItem="Mlw-2n-TAj" secondAttribute="trailing" id="vwV-ca-NDf"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="topLayoutConstraint" destination="ABA-ie-37L" id="Vcf-rB-ubw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="star_wars_logo" width="250" height="107"/>
+    </resources>
+</document>
