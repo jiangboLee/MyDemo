@@ -15,15 +15,22 @@ class ViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        topLayoutConstraint.isActive = false
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        UIView.animate(withDuration: 1) { 
-            topLayoutConstraint.isActive = true
+//        topLayoutConstraint.isActive = false
+//        UIView.animate(withDuration: 2) {
+//            
+//            self.topLayoutConstraint.isActive = true
+//            self.view.layoutIfNeeded()
+//        }
+        UIView.animate(withDuration: 1) {
+            
+            self.topLayoutConstraint.constant = 133;
             self.view.layoutIfNeeded()
         }
+        
+    }
+    
+    override var prefersStatusBarHidden: Bool {
+        return true
     }
     
     override func viewDidLoad() {
