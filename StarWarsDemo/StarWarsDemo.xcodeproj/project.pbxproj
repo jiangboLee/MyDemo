@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3F7003291F4D544300901AA5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7003281F4D544300901AA5 /* AppDelegate.swift */; };
-		3F70032B1F4D544300901AA5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F70032A1F4D544300901AA5 /* ViewController.swift */; };
 		3F70032E1F4D544300901AA5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F70032C1F4D544300901AA5 /* Main.storyboard */; };
 		3F7003301F4D544300901AA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F70032F1F4D544300901AA5 /* Assets.xcassets */; };
 		3F7003331F4D544300901AA5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F7003311F4D544300901AA5 /* LaunchScreen.storyboard */; };
@@ -19,12 +17,15 @@
 		3F70034A1F4EA49900901AA5 /* CircularRevealAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7003491F4EA49900901AA5 /* CircularRevealAnimator.swift */; };
 		3F70034C1F4EAACF00901AA5 /* AnimationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F70034B1F4EAACF00901AA5 /* AnimationDelegate.swift */; };
 		3F70034E1F4EB09C00901AA5 /* PrifileButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F70034D1F4EB09C00901AA5 /* PrifileButton.swift */; };
+		3F7003511F4FC89C00901AA5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7003501F4FC89C00901AA5 /* ViewController.swift */; };
+		3F7003541F4FC8BF00901AA5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7003531F4FC8BF00901AA5 /* AppDelegate.swift */; };
+		3F7003561F4FD12F00901AA5 /* MainSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7003551F4FD12F00901AA5 /* MainSettingViewController.swift */; };
+		3F7003581F4FDD3A00901AA5 /* SettingsTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7003571F4FDD3A00901AA5 /* SettingsTheme.swift */; };
+		3F70035A1F4FE03E00901AA5 /* SettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7003591F4FE03E00901AA5 /* SettingTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3F7003251F4D544300901AA5 /* StarWarsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarWarsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		3F7003281F4D544300901AA5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../AppDelegate.swift; sourceTree = "<group>"; };
-		3F70032A1F4D544300901AA5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../ViewController.swift; sourceTree = "<group>"; };
 		3F70032D1F4D544300901AA5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3F70032F1F4D544300901AA5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F7003321F4D544300901AA5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +37,11 @@
 		3F7003491F4EA49900901AA5 /* CircularRevealAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularRevealAnimator.swift; sourceTree = "<group>"; };
 		3F70034B1F4EAACF00901AA5 /* AnimationDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationDelegate.swift; sourceTree = "<group>"; };
 		3F70034D1F4EB09C00901AA5 /* PrifileButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrifileButton.swift; sourceTree = "<group>"; };
+		3F7003501F4FC89C00901AA5 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3F7003531F4FC8BF00901AA5 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3F7003551F4FD12F00901AA5 /* MainSettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainSettingViewController.swift; sourceTree = "<group>"; };
+		3F7003571F4FDD3A00901AA5 /* SettingsTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsTheme.swift; path = StarWarsDemo/Controller/SettingsTheme.swift; sourceTree = SOURCE_ROOT; };
+		3F7003591F4FE03E00901AA5 /* SettingTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,10 +74,10 @@
 		3F7003271F4D544300901AA5 /* StarWarsDemo */ = {
 			isa = PBXGroup;
 			children = (
+				3F70034F1F4FC89C00901AA5 /* Controller */,
 				3F70033A1F4D54C300901AA5 /* CircularAnimation */,
-				3F70033B1F4D54C300901AA5 /* Controller */,
 				3F70033C1F4D54C300901AA5 /* Extension */,
-				3F70033D1F4D54C300901AA5 /* Misc */,
+				3F7003521F4FC8BF00901AA5 /* Misc */,
 				3F70033E1F4D54C300901AA5 /* Resources */,
 				3F70033F1F4D54C300901AA5 /* View */,
 				3F7003401F4D54C300901AA5 /* ViewModel */,
@@ -92,14 +98,6 @@
 			path = CircularAnimation;
 			sourceTree = "<group>";
 		};
-		3F70033B1F4D54C300901AA5 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				3F70032A1F4D544300901AA5 /* ViewController.swift */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
 		3F70033C1F4D54C300901AA5 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
@@ -107,14 +105,6 @@
 				3F7003471F4E8CE800901AA5 /* UIView+IBInspectable.swift */,
 			);
 			path = Extension;
-			sourceTree = "<group>";
-		};
-		3F70033D1F4D54C300901AA5 /* Misc */ = {
-			isa = PBXGroup;
-			children = (
-				3F7003281F4D544300901AA5 /* AppDelegate.swift */,
-			);
-			path = Misc;
 			sourceTree = "<group>";
 		};
 		3F70033E1F4D54C300901AA5 /* Resources */ = {
@@ -137,8 +127,27 @@
 		3F7003401F4D54C300901AA5 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				3F7003571F4FDD3A00901AA5 /* SettingsTheme.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3F70034F1F4FC89C00901AA5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3F7003501F4FC89C00901AA5 /* ViewController.swift */,
+				3F7003551F4FD12F00901AA5 /* MainSettingViewController.swift */,
+				3F7003591F4FE03E00901AA5 /* SettingTableViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3F7003521F4FC8BF00901AA5 /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				3F7003531F4FC8BF00901AA5 /* AppDelegate.swift */,
+			);
+			path = Misc;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,12 +225,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F70034C1F4EAACF00901AA5 /* AnimationDelegate.swift in Sources */,
-				3F70032B1F4D544300901AA5 /* ViewController.swift in Sources */,
-				3F7003291F4D544300901AA5 /* AppDelegate.swift in Sources */,
+				3F7003511F4FC89C00901AA5 /* ViewController.swift in Sources */,
+				3F7003581F4FDD3A00901AA5 /* SettingsTheme.swift in Sources */,
+				3F7003541F4FC8BF00901AA5 /* AppDelegate.swift in Sources */,
 				3F7003481F4E8CE800901AA5 /* UIView+IBInspectable.swift in Sources */,
 				3F7003461F4E747600901AA5 /* UIColor+String.swift in Sources */,
 				3F70034E1F4EB09C00901AA5 /* PrifileButton.swift in Sources */,
+				3F70035A1F4FE03E00901AA5 /* SettingTableViewController.swift in Sources */,
 				3F70034A1F4EA49900901AA5 /* CircularRevealAnimator.swift in Sources */,
+				3F7003561F4FD12F00901AA5 /* MainSettingViewController.swift in Sources */,
 				3F7003421F4D835700901AA5 /* StarsOverlay.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -388,6 +400,7 @@
 				3F7003391F4D544300901AA5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

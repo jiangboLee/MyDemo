@@ -51,9 +51,19 @@ extension UIView {
             let y = max(center.y, frame.height - center.y)
             return sqrt(x * x + y * y)
         }()
-//        var animation : 
-        
-        
+        var animation : CircularRevealAnimator
+        if !revert {
+            animation = CircularRevealAnimator(layer: snapshot.layer, center: center, startRadius: 0, endRadius: radius, invert: true)
+        } else {
+            animation = CircularRevealAnimator(layer: snapshot.layer, center: center, startRadius: radius, endRadius: 0, invert: false)
+        }
+        animation.duration = duration
+        animation.completion = {
+            snapshot.removeFromSuperview()
+            completion?(true)
+        }
+        animation.start()
+        animations()
     }
 }
 

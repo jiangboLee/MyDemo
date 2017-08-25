@@ -82,6 +82,8 @@ class StarsOverlay: UIView {
         emitter.emitterPosition = self.center
         emitter.emitterSize = self.bounds.size
     }
+    
+    
 }
 
 
