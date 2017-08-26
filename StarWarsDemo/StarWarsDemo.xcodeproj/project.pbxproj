@@ -22,6 +22,8 @@
 		3F7003561F4FD12F00901AA5 /* MainSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7003551F4FD12F00901AA5 /* MainSettingViewController.swift */; };
 		3F7003581F4FDD3A00901AA5 /* SettingsTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7003571F4FDD3A00901AA5 /* SettingsTheme.swift */; };
 		3F70035A1F4FE03E00901AA5 /* SettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7003591F4FE03E00901AA5 /* SettingTableViewController.swift */; };
+		B7923E2A1F51BC4300F671B9 /* StarWarsUIAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7923E291F51BC4300F671B9 /* StarWarsUIAnimator.swift */; };
+		B7923E2C1F51C65700F671B9 /* StarWarsUIDynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7923E2B1F51C65700F671B9 /* StarWarsUIDynamic.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +44,8 @@
 		3F7003551F4FD12F00901AA5 /* MainSettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainSettingViewController.swift; sourceTree = "<group>"; };
 		3F7003571F4FDD3A00901AA5 /* SettingsTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsTheme.swift; path = StarWarsDemo/Controller/SettingsTheme.swift; sourceTree = SOURCE_ROOT; };
 		3F7003591F4FE03E00901AA5 /* SettingTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingTableViewController.swift; sourceTree = "<group>"; };
+		B7923E291F51BC4300F671B9 /* StarWarsUIAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarWarsUIAnimator.swift; sourceTree = "<group>"; };
+		B7923E2B1F51C65700F671B9 /* StarWarsUIDynamic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarWarsUIDynamic.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +85,7 @@
 				3F70033E1F4D54C300901AA5 /* Resources */,
 				3F70033F1F4D54C300901AA5 /* View */,
 				3F7003401F4D54C300901AA5 /* ViewModel */,
+				B7923E251F51BC1E00F671B9 /* StarWarAnimation */,
 				3F70032C1F4D544300901AA5 /* Main.storyboard */,
 				3F70032F1F4D544300901AA5 /* Assets.xcassets */,
 				3F7003311F4D544300901AA5 /* LaunchScreen.storyboard */,
@@ -148,6 +153,39 @@
 				3F7003531F4FC8BF00901AA5 /* AppDelegate.swift */,
 			);
 			path = Misc;
+			sourceTree = "<group>";
+		};
+		B7923E251F51BC1E00F671B9 /* StarWarAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				B7923E261F51BC1E00F671B9 /* StarGL */,
+				B7923E271F51BC1E00F671B9 /* StarUIAnimation */,
+				B7923E281F51BC1E00F671B9 /* StarUIDynamic */,
+			);
+			path = StarWarAnimation;
+			sourceTree = "<group>";
+		};
+		B7923E261F51BC1E00F671B9 /* StarGL */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = StarGL;
+			sourceTree = "<group>";
+		};
+		B7923E271F51BC1E00F671B9 /* StarUIAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				B7923E291F51BC4300F671B9 /* StarWarsUIAnimator.swift */,
+			);
+			path = StarUIAnimation;
+			sourceTree = "<group>";
+		};
+		B7923E281F51BC1E00F671B9 /* StarUIDynamic */ = {
+			isa = PBXGroup;
+			children = (
+				B7923E2B1F51C65700F671B9 /* StarWarsUIDynamic.swift */,
+			);
+			path = StarUIDynamic;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7923E2C1F51C65700F671B9 /* StarWarsUIDynamic.swift in Sources */,
 				3F70034C1F4EAACF00901AA5 /* AnimationDelegate.swift in Sources */,
 				3F7003511F4FC89C00901AA5 /* ViewController.swift in Sources */,
 				3F7003581F4FDD3A00901AA5 /* SettingsTheme.swift in Sources */,
@@ -231,6 +270,7 @@
 				3F7003481F4E8CE800901AA5 /* UIView+IBInspectable.swift in Sources */,
 				3F7003461F4E747600901AA5 /* UIColor+String.swift in Sources */,
 				3F70034E1F4EB09C00901AA5 /* PrifileButton.swift in Sources */,
+				B7923E2A1F51BC4300F671B9 /* StarWarsUIAnimator.swift in Sources */,
 				3F70035A1F4FE03E00901AA5 /* SettingTableViewController.swift in Sources */,
 				3F70034A1F4EA49900901AA5 /* CircularRevealAnimator.swift in Sources */,
 				3F7003561F4FD12F00901AA5 /* MainSettingViewController.swift in Sources */,

@@ -43,6 +43,11 @@ class ViewController: UIViewController {
         
     }
 
+    
+    @IBAction func  backToViewController(_ segue: UIStoryboardSegue) {
+        
+    }
+    
     @IBAction func setupYourProfileTapped(_ sender: PrifileButton) {
         sender.animateTouchUpInside { 
             self.performSegue(withIdentifier: "presentSettings", sender: sender)
@@ -59,9 +64,11 @@ class ViewController: UIViewController {
 }
 
 extension ViewController: UIViewControllerTransitioningDelegate {
-//
-//    func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-//        
-//    }
+
+    func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        
+//        return StarWarsUIAnimator()
+        return StarWarsUIDynamic()
+    }
 }
 
