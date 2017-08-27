@@ -24,6 +24,8 @@
 		3F70035A1F4FE03E00901AA5 /* SettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7003591F4FE03E00901AA5 /* SettingTableViewController.swift */; };
 		B7923E2A1F51BC4300F671B9 /* StarWarsUIAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7923E291F51BC4300F671B9 /* StarWarsUIAnimator.swift */; };
 		B7923E2C1F51C65700F671B9 /* StarWarsUIDynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7923E2B1F51C65700F671B9 /* StarWarsUIDynamic.swift */; };
+		B7923E2E1F52747600F671B9 /* StarGLAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7923E2D1F52747600F671B9 /* StarGLAnimator.swift */; };
+		B7923E301F52787800F671B9 /* ViewTexture.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7923E2F1F52787800F671B9 /* ViewTexture.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +48,8 @@
 		3F7003591F4FE03E00901AA5 /* SettingTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingTableViewController.swift; sourceTree = "<group>"; };
 		B7923E291F51BC4300F671B9 /* StarWarsUIAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarWarsUIAnimator.swift; sourceTree = "<group>"; };
 		B7923E2B1F51C65700F671B9 /* StarWarsUIDynamic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarWarsUIDynamic.swift; sourceTree = "<group>"; };
+		B7923E2D1F52747600F671B9 /* StarGLAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarGLAnimator.swift; sourceTree = "<group>"; };
+		B7923E2F1F52787800F671B9 /* ViewTexture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewTexture.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +172,8 @@
 		B7923E261F51BC1E00F671B9 /* StarGL */ = {
 			isa = PBXGroup;
 			children = (
+				B7923E2D1F52747600F671B9 /* StarGLAnimator.swift */,
+				B7923E2F1F52787800F671B9 /* ViewTexture.swift */,
 			);
 			path = StarGL;
 			sourceTree = "<group>";
@@ -275,6 +281,8 @@
 				3F70034A1F4EA49900901AA5 /* CircularRevealAnimator.swift in Sources */,
 				3F7003561F4FD12F00901AA5 /* MainSettingViewController.swift in Sources */,
 				3F7003421F4D835700901AA5 /* StarsOverlay.swift in Sources */,
+				B7923E301F52787800F671B9 /* ViewTexture.swift in Sources */,
+				B7923E2E1F52747600F671B9 /* StarGLAnimator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
