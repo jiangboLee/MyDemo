@@ -10,16 +10,52 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var animationView: AnimationView!
+    
+    @IBOutlet weak var activityTableView: UITableView!
+    
+    @IBOutlet weak var helperView: UIView!
+    
+    @IBOutlet weak var activityTableViewLeadingConstraint: NSLayoutConstraint!
+    
+    @IBOutlet weak var activityTableViewTrailingContraint: NSLayoutConstraint!
+    
+    fileprivate var backgroundHeaderSectionView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        backgroundHeaderSectionView = UIView(frame: helperView.frame)
+        animationView.frame = CGRect(x: view.frame.origin.x, y: view.frame.origin.y, width: view.frame.width - activityTableViewLeadingConstraint.constant + activityTableViewTrailingContraint.constant, height: view.frame.height)
+        
+        setTitleView()
+        setupTableView()
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    fileprivate func setTitleView() {
+        let logo = #imageLiteral(resourceName: "myDayFit")
+        let imageView = UIImageView(image: logo)
+        navigationItem.titleView = imageView
     }
-
+    
+    fileprivate func setupTableView() {
+        activityTableView.register(ActivityTableViewCell.cellNib, forCellReuseIdentifier: ActivityTableViewCell.id)
+        activityTableView.register(TableHeaderSectionView.cellNib, forCellReuseIdentifier: TableHeaderSectionView.id)
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+         super.viewDidAppear(animated)
+    }
+    
+    fileprivate func configureAnimationView() {
+        let activities = ActivityDataProvider.generateAcitivities()
+        animationView.
+    }
+    
 
 }
+
+
+
+
 

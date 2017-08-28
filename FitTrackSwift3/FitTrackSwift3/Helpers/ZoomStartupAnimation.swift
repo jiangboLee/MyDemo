@@ -11,10 +11,10 @@ import UIKit
 private let startAnimationImageWidth: CGFloat = 172.0
 private let finishAnimationImageWidth: CGFloat = 2000.0
 
-private let transfromAnimationDuration: TimeInterval = 3.0
+private let transfromAnimationDuration: TimeInterval = 1.0
 private let transfromAnimationDelay: TimeInterval = 1
 private let maskBackgroundImageViewAnimationDuration: TimeInterval = 0.3
-private let maskBackgroundImageViewAnimationDelay: TimeInterval = 2.0
+private let maskBackgroundImageViewAnimationDelay: TimeInterval = 1.1
 
 class ZoomStartupAnimation {
 
