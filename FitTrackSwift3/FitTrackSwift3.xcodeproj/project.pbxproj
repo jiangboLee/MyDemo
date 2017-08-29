@@ -14,12 +14,6 @@
 		3F7003721F53BC6200901AA5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F7003701F53BC6200901AA5 /* LaunchScreen.storyboard */; };
 		3F7003811F53BE5700901AA5 /* CustomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7003801F53BE5700901AA5 /* CustomNavigationController.swift */; };
 		3F7003831F53BE9C00901AA5 /* ZoomStartupAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7003821F53BE9C00901AA5 /* ZoomStartupAnimation.swift */; };
-		3F70038E1F53FEA600901AA5 /* AnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F70038D1F53FEA600901AA5 /* AnimationView.swift */; };
-		3F7003901F53FEEB00901AA5 /* FloatAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F70038F1F53FEEB00901AA5 /* FloatAdditions.swift */; };
-		3F7003921F54007900901AA5 /* ViewAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7003911F54007900901AA5 /* ViewAdditions.swift */; };
-		3F7003941F5404D300901AA5 /* ActivityContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7003931F5404D300901AA5 /* ActivityContainerView.swift */; };
-		3F7003961F5404DD00901AA5 /* ActivityContainerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F7003951F5404DD00901AA5 /* ActivityContainerView.xib */; };
-		3F7003981F54092300901AA5 /* AnimationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F7003971F54092300901AA5 /* AnimationView.xib */; };
 		3F70039B1F54108F00901AA5 /* ActivityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7003991F54108F00901AA5 /* ActivityTableViewCell.swift */; };
 		3F70039E1F54116400901AA5 /* CellInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F70039D1F54116400901AA5 /* CellInterface.swift */; };
 		3F7003A01F54145E00901AA5 /* ActivityTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F70039F1F54145E00901AA5 /* ActivityTableViewCell.xib */; };
@@ -28,12 +22,20 @@
 		3F7003A61F54178700901AA5 /* TableHeaderSectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F7003A41F54178700901AA5 /* TableHeaderSectionView.xib */; };
 		3F7003A81F5417DC00901AA5 /* CustomColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7003A71F5417DC00901AA5 /* CustomColors.swift */; };
 		3F7003AA1F54241F00901AA5 /* ActivityDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7003A91F54241F00901AA5 /* ActivityDataProvider.swift */; };
-		3F7003AC1F54251100901AA5 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7003AB1F54251100901AA5 /* Activity.swift */; };
-		3F7003AE1F54251E00901AA5 /* ActivityResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7003AD1F54251E00901AA5 /* ActivityResource.swift */; };
-		3F7003B01F54252400901AA5 /* LabelConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7003AF1F54252400901AA5 /* LabelConfigurator.swift */; };
 		3F7003B41F54263E00901AA5 /* SFUIText-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3F7003B11F54263E00901AA5 /* SFUIText-Bold.ttf */; };
 		3F7003B51F54263E00901AA5 /* SFUIText-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3F7003B21F54263E00901AA5 /* SFUIText-Light.ttf */; };
 		3F7003B61F54263E00901AA5 /* SFUIText-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3F7003B31F54263E00901AA5 /* SFUIText-Regular.ttf */; };
+		3F7003D31F5546BA00901AA5 /* ActivityContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7003C11F5546BA00901AA5 /* ActivityContainerView.swift */; };
+		3F7003D41F5546BA00901AA5 /* ActivityContainerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F7003C21F5546BA00901AA5 /* ActivityContainerView.xib */; };
+		3F7003D51F5546BA00901AA5 /* Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7003C41F5546BA00901AA5 /* Animations.swift */; };
+		3F7003D61F5546BA00901AA5 /* AnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7003C51F5546BA00901AA5 /* AnimationView.swift */; };
+		3F7003D71F5546BA00901AA5 /* AnimationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F7003C61F5546BA00901AA5 /* AnimationView.xib */; };
+		3F7003D81F5546BA00901AA5 /* FloatAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7003C81F5546BA00901AA5 /* FloatAdditions.swift */; };
+		3F7003D91F5546BA00901AA5 /* ViewAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7003C91F5546BA00901AA5 /* ViewAdditions.swift */; };
+		3F7003DA1F5546BA00901AA5 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7003CC1F5546BA00901AA5 /* Activity.swift */; };
+		3F7003DB1F5546BA00901AA5 /* ActivityResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7003CE1F5546BA00901AA5 /* ActivityResource.swift */; };
+		3F7003DC1F5546BA00901AA5 /* LabelConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7003D01F5546BA00901AA5 /* LabelConfigurator.swift */; };
+		3F7003DD1F5546BA00901AA5 /* RoundActivityButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7003D21F5546BA00901AA5 /* RoundActivityButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,12 +48,6 @@
 		3F7003731F53BC6200901AA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F7003801F53BE5700901AA5 /* CustomNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavigationController.swift; sourceTree = "<group>"; };
 		3F7003821F53BE9C00901AA5 /* ZoomStartupAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZoomStartupAnimation.swift; sourceTree = "<group>"; };
-		3F70038D1F53FEA600901AA5 /* AnimationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationView.swift; sourceTree = "<group>"; };
-		3F70038F1F53FEEB00901AA5 /* FloatAdditions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatAdditions.swift; sourceTree = "<group>"; };
-		3F7003911F54007900901AA5 /* ViewAdditions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewAdditions.swift; sourceTree = "<group>"; };
-		3F7003931F5404D300901AA5 /* ActivityContainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityContainerView.swift; sourceTree = "<group>"; };
-		3F7003951F5404DD00901AA5 /* ActivityContainerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ActivityContainerView.xib; sourceTree = "<group>"; };
-		3F7003971F54092300901AA5 /* AnimationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AnimationView.xib; sourceTree = "<group>"; };
 		3F7003991F54108F00901AA5 /* ActivityTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityTableViewCell.swift; sourceTree = "<group>"; };
 		3F70039D1F54116400901AA5 /* CellInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellInterface.swift; sourceTree = "<group>"; };
 		3F70039F1F54145E00901AA5 /* ActivityTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ActivityTableViewCell.xib; sourceTree = "<group>"; };
@@ -60,12 +56,20 @@
 		3F7003A41F54178700901AA5 /* TableHeaderSectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableHeaderSectionView.xib; sourceTree = "<group>"; };
 		3F7003A71F5417DC00901AA5 /* CustomColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomColors.swift; sourceTree = "<group>"; };
 		3F7003A91F54241F00901AA5 /* ActivityDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityDataProvider.swift; sourceTree = "<group>"; };
-		3F7003AB1F54251100901AA5 /* Activity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
-		3F7003AD1F54251E00901AA5 /* ActivityResource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityResource.swift; sourceTree = "<group>"; };
-		3F7003AF1F54252400901AA5 /* LabelConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelConfigurator.swift; sourceTree = "<group>"; };
 		3F7003B11F54263E00901AA5 /* SFUIText-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFUIText-Bold.ttf"; sourceTree = "<group>"; };
 		3F7003B21F54263E00901AA5 /* SFUIText-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFUIText-Light.ttf"; sourceTree = "<group>"; };
 		3F7003B31F54263E00901AA5 /* SFUIText-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFUIText-Regular.ttf"; sourceTree = "<group>"; };
+		3F7003C11F5546BA00901AA5 /* ActivityContainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityContainerView.swift; sourceTree = "<group>"; };
+		3F7003C21F5546BA00901AA5 /* ActivityContainerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ActivityContainerView.xib; sourceTree = "<group>"; };
+		3F7003C41F5546BA00901AA5 /* Animations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animations.swift; sourceTree = "<group>"; };
+		3F7003C51F5546BA00901AA5 /* AnimationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationView.swift; sourceTree = "<group>"; };
+		3F7003C61F5546BA00901AA5 /* AnimationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AnimationView.xib; sourceTree = "<group>"; };
+		3F7003C81F5546BA00901AA5 /* FloatAdditions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatAdditions.swift; sourceTree = "<group>"; };
+		3F7003C91F5546BA00901AA5 /* ViewAdditions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewAdditions.swift; sourceTree = "<group>"; };
+		3F7003CC1F5546BA00901AA5 /* Activity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
+		3F7003CE1F5546BA00901AA5 /* ActivityResource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityResource.swift; sourceTree = "<group>"; };
+		3F7003D01F5546BA00901AA5 /* LabelConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelConfigurator.swift; sourceTree = "<group>"; };
+		3F7003D21F5546BA00901AA5 /* RoundActivityButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundActivityButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,79 +185,81 @@
 		3F7003841F53F4CF00901AA5 /* FitTrack */ = {
 			isa = PBXGroup;
 			children = (
-				3F7003851F53F4CF00901AA5 /* AcitivityContainerView */,
-				3F7003861F53F4CF00901AA5 /* AnimationView */,
-				3F7003871F53F4CF00901AA5 /* Extensions */,
-				3F7003881F53F4CF00901AA5 /* Models */,
-				3F70038C1F53F4CF00901AA5 /* RoundActivityButton */,
+				3F7003C01F5546BA00901AA5 /* ActivityContainerView */,
+				3F7003C31F5546BA00901AA5 /* AnimationView */,
+				3F7003C71F5546BA00901AA5 /* Extensions */,
+				3F7003CA1F5546BA00901AA5 /* Models */,
+				3F7003D11F5546BA00901AA5 /* RoundActivityButton */,
 			);
 			path = FitTrack;
 			sourceTree = "<group>";
 		};
-		3F7003851F53F4CF00901AA5 /* AcitivityContainerView */ = {
+		3F7003C01F5546BA00901AA5 /* ActivityContainerView */ = {
 			isa = PBXGroup;
 			children = (
-				3F7003931F5404D300901AA5 /* ActivityContainerView.swift */,
-				3F7003951F5404DD00901AA5 /* ActivityContainerView.xib */,
+				3F7003C11F5546BA00901AA5 /* ActivityContainerView.swift */,
+				3F7003C21F5546BA00901AA5 /* ActivityContainerView.xib */,
 			);
-			path = AcitivityContainerView;
+			path = ActivityContainerView;
 			sourceTree = "<group>";
 		};
-		3F7003861F53F4CF00901AA5 /* AnimationView */ = {
+		3F7003C31F5546BA00901AA5 /* AnimationView */ = {
 			isa = PBXGroup;
 			children = (
-				3F70038D1F53FEA600901AA5 /* AnimationView.swift */,
-				3F7003971F54092300901AA5 /* AnimationView.xib */,
+				3F7003C41F5546BA00901AA5 /* Animations.swift */,
+				3F7003C51F5546BA00901AA5 /* AnimationView.swift */,
+				3F7003C61F5546BA00901AA5 /* AnimationView.xib */,
 			);
 			path = AnimationView;
 			sourceTree = "<group>";
 		};
-		3F7003871F53F4CF00901AA5 /* Extensions */ = {
+		3F7003C71F5546BA00901AA5 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				3F70038F1F53FEEB00901AA5 /* FloatAdditions.swift */,
-				3F7003911F54007900901AA5 /* ViewAdditions.swift */,
+				3F7003C81F5546BA00901AA5 /* FloatAdditions.swift */,
+				3F7003C91F5546BA00901AA5 /* ViewAdditions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		3F7003881F53F4CF00901AA5 /* Models */ = {
+		3F7003CA1F5546BA00901AA5 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				3F7003891F53F4CF00901AA5 /* Activity */,
-				3F70038A1F53F4CF00901AA5 /* ActivityResourse */,
-				3F70038B1F53F4CF00901AA5 /* LableConfigurator */,
+				3F7003CB1F5546BA00901AA5 /* Activity */,
+				3F7003CD1F5546BA00901AA5 /* ActivityResource */,
+				3F7003CF1F5546BA00901AA5 /* LabelConfigurator */,
 			);
 			path = Models;
 			sourceTree = "<group>";
 		};
-		3F7003891F53F4CF00901AA5 /* Activity */ = {
+		3F7003CB1F5546BA00901AA5 /* Activity */ = {
 			isa = PBXGroup;
 			children = (
-				3F7003AB1F54251100901AA5 /* Activity.swift */,
+				3F7003CC1F5546BA00901AA5 /* Activity.swift */,
 			);
 			path = Activity;
 			sourceTree = "<group>";
 		};
-		3F70038A1F53F4CF00901AA5 /* ActivityResourse */ = {
+		3F7003CD1F5546BA00901AA5 /* ActivityResource */ = {
 			isa = PBXGroup;
 			children = (
-				3F7003AD1F54251E00901AA5 /* ActivityResource.swift */,
+				3F7003CE1F5546BA00901AA5 /* ActivityResource.swift */,
 			);
-			path = ActivityResourse;
+			path = ActivityResource;
 			sourceTree = "<group>";
 		};
-		3F70038B1F53F4CF00901AA5 /* LableConfigurator */ = {
+		3F7003CF1F5546BA00901AA5 /* LabelConfigurator */ = {
 			isa = PBXGroup;
 			children = (
-				3F7003AF1F54252400901AA5 /* LabelConfigurator.swift */,
+				3F7003D01F5546BA00901AA5 /* LabelConfigurator.swift */,
 			);
-			path = LableConfigurator;
+			path = LabelConfigurator;
 			sourceTree = "<group>";
 		};
-		3F70038C1F53F4CF00901AA5 /* RoundActivityButton */ = {
+		3F7003D11F5546BA00901AA5 /* RoundActivityButton */ = {
 			isa = PBXGroup;
 			children = (
+				3F7003D21F5546BA00901AA5 /* RoundActivityButton.swift */,
 			);
 			path = RoundActivityButton;
 			sourceTree = "<group>";
@@ -321,10 +327,10 @@
 				3F7003A61F54178700901AA5 /* TableHeaderSectionView.xib in Resources */,
 				3F7003B61F54263E00901AA5 /* SFUIText-Regular.ttf in Resources */,
 				3F7003B51F54263E00901AA5 /* SFUIText-Light.ttf in Resources */,
+				3F7003D71F5546BA00901AA5 /* AnimationView.xib in Resources */,
+				3F7003D41F5546BA00901AA5 /* ActivityContainerView.xib in Resources */,
 				3F7003721F53BC6200901AA5 /* LaunchScreen.storyboard in Resources */,
-				3F7003961F5404DD00901AA5 /* ActivityContainerView.xib in Resources */,
 				3F70036F1F53BC6200901AA5 /* Assets.xcassets in Resources */,
-				3F7003981F54092300901AA5 /* AnimationView.xib in Resources */,
 				3F7003A01F54145E00901AA5 /* ActivityTableViewCell.xib in Resources */,
 				3F70036D1F53BC6200901AA5 /* Main.storyboard in Resources */,
 				3F7003B41F54263E00901AA5 /* SFUIText-Bold.ttf in Resources */,
@@ -338,21 +344,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F7003AC1F54251100901AA5 /* Activity.swift in Sources */,
+				3F7003D31F5546BA00901AA5 /* ActivityContainerView.swift in Sources */,
 				3F7003A51F54178700901AA5 /* TableHeaderSectionView.swift in Sources */,
+				3F7003D51F5546BA00901AA5 /* Animations.swift in Sources */,
 				3F7003A81F5417DC00901AA5 /* CustomColors.swift in Sources */,
+				3F7003D81F5546BA00901AA5 /* FloatAdditions.swift in Sources */,
+				3F7003D91F5546BA00901AA5 /* ViewAdditions.swift in Sources */,
+				3F7003DA1F5546BA00901AA5 /* Activity.swift in Sources */,
+				3F7003DC1F5546BA00901AA5 /* LabelConfigurator.swift in Sources */,
+				3F7003D61F5546BA00901AA5 /* AnimationView.swift in Sources */,
 				3F7003811F53BE5700901AA5 /* CustomNavigationController.swift in Sources */,
-				3F7003941F5404D300901AA5 /* ActivityContainerView.swift in Sources */,
-				3F70038E1F53FEA600901AA5 /* AnimationView.swift in Sources */,
-				3F7003AE1F54251E00901AA5 /* ActivityResource.swift in Sources */,
 				3F7003A21F5415F700901AA5 /* SegmentView.swift in Sources */,
-				3F7003B01F54252400901AA5 /* LabelConfigurator.swift in Sources */,
 				3F7003831F53BE9C00901AA5 /* ZoomStartupAnimation.swift in Sources */,
 				3F7003AA1F54241F00901AA5 /* ActivityDataProvider.swift in Sources */,
-				3F7003921F54007900901AA5 /* ViewAdditions.swift in Sources */,
 				3F70039E1F54116400901AA5 /* CellInterface.swift in Sources */,
+				3F7003DB1F5546BA00901AA5 /* ActivityResource.swift in Sources */,
 				3F70036A1F53BC6200901AA5 /* ViewController.swift in Sources */,
-				3F7003901F53FEEB00901AA5 /* FloatAdditions.swift in Sources */,
+				3F7003DD1F5546BA00901AA5 /* RoundActivityButton.swift in Sources */,
 				3F7003681F53BC6200901AA5 /* AppDelegate.swift in Sources */,
 				3F70039B1F54108F00901AA5 /* ActivityTableViewCell.swift in Sources */,
 			);

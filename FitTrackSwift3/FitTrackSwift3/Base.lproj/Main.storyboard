@@ -32,36 +32,42 @@
                                     <constraint firstAttribute="height" constant="114" id="9D2-ol-SON"/>
                                 </constraints>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="DZE-fx-dp9">
-                                <rect key="frame" x="23" y="0.0" width="329" height="667"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="DZE-fx-dp9">
+                                <rect key="frame" x="7" y="0.0" width="361" height="667"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <inset key="scrollIndicatorInsets" minX="7" minY="0.0" maxX="7" maxY="0.0"/>
+                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <view key="tableHeaderView" contentMode="scaleToFill" id="HYd-Ir-bur" customClass="AnimationView" customModule="FitTrackSwift3" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="0.0" width="329" height="44"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="361" height="44"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="I1r-dE-3Ra">
-                                        <rect key="frame" x="0.0" y="72" width="329" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TextCell" id="I1r-dE-3Ra">
+                                        <rect key="frame" x="0.0" y="72" width="361" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="I1r-dE-3Ra" id="ZVf-84-iY6">
-                                            <rect key="frame" x="0.0" y="0.0" width="329" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="361" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="wKn-ER-Gsf"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="WtP-W9-kPI"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="ip9-Mt-fOn" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="2rs-3z-sLa"/>
                             <constraint firstAttribute="trailing" secondItem="DjL-6d-987" secondAttribute="trailing" id="4ai-GS-EjA"/>
+                            <constraint firstAttribute="trailing" secondItem="DZE-fx-dp9" secondAttribute="trailing" constant="7" id="5Jd-qr-g8x"/>
                             <constraint firstItem="DjL-6d-987" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="BuF-L5-Ua2"/>
                             <constraint firstItem="DZE-fx-dp9" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="LG1-Vd-vk4"/>
                             <constraint firstAttribute="trailing" secondItem="ip9-Mt-fOn" secondAttribute="trailing" id="Sev-d5-Mql"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="DZE-fx-dp9" secondAttribute="trailing" constant="7" id="e6j-0U-qee"/>
+                            <constraint firstItem="DZE-fx-dp9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="7" id="SqL-MS-CT6"/>
                             <constraint firstItem="DjL-6d-987" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="l0i-s9-3QY"/>
-                            <constraint firstItem="DZE-fx-dp9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="7" id="mVO-oC-Vkp"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="DZE-fx-dp9" secondAttribute="bottom" id="pvw-V8-Nl9"/>
                             <constraint firstAttribute="bottom" secondItem="DjL-6d-987" secondAttribute="bottom" id="r6H-HI-xRt"/>
                             <constraint firstItem="ip9-Mt-fOn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="xYq-5P-RlP"/>
@@ -77,22 +83,22 @@
                     </navigationItem>
                     <connections>
                         <outlet property="activityTableView" destination="DZE-fx-dp9" id="LwJ-CN-MmB"/>
-                        <outlet property="activityTableViewLeadingConstraint" destination="mVO-oC-Vkp" id="wch-0s-mTJ"/>
-                        <outlet property="activityTableViewTrailingContraint" destination="e6j-0U-qee" id="yIQ-VI-eoN"/>
+                        <outlet property="activityTableViewLeadingConstraint" destination="SqL-MS-CT6" id="YTP-2w-i9D"/>
+                        <outlet property="activityTableViewTrailingContraint" destination="5Jd-qr-g8x" id="WfC-jp-o2a"/>
                         <outlet property="animationView" destination="HYd-Ir-bur" id="k2x-zN-hZA"/>
                         <outlet property="helperView" destination="ip9-Mt-fOn" id="aYx-dJ-ZUs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="764" y="-546"/>
+            <point key="canvasLocation" x="764" y="-546.47676161919048"/>
         </scene>
         <!--Custom Navigation Controller-->
         <scene sceneID="vnr-36-O7X">
             <objects>
                 <navigationController storyboardIdentifier="navigationController" automaticallyAdjustsScrollViewInsets="NO" id="C1n-eP-GCV" customClass="CustomNavigationController" customModule="FitTrackSwift3" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="WVH-EV-e8s">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="WVH-EV-e8s">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
