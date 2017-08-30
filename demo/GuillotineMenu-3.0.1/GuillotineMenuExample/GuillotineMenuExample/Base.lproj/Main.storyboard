@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="HV9-Uq-kvX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="HV9-Uq-kvX">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -32,14 +32,14 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ContentCell" id="URY-Jl-CHw">
-                                        <rect key="frame" x="-102.5" y="10" width="580" height="288"/>
+                                        <rect key="frame" x="-103" y="10" width="581" height="288"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="580" height="288"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="581" height="288"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="content_1@3x.png" translatesAutoresizingMaskIntoConstraints="NO" id="Gcb-gK-d8d">
-                                                    <rect key="frame" x="0.0" y="0.0" width="580" height="288"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="581" height="288"/>
                                                 </imageView>
                                             </subviews>
                                         </view>
@@ -92,7 +92,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="958" y="484"/>
+            <point key="canvasLocation" x="754" y="484"/>
         </scene>
         <!--Menu View Controller-->
         <scene sceneID="ZlZ-2M-K3G">
@@ -236,7 +236,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4na-XP-9gu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="283" y="484"/>
+            <point key="canvasLocation" x="-124" y="484"/>
         </scene>
     </scenes>
     <resources>
