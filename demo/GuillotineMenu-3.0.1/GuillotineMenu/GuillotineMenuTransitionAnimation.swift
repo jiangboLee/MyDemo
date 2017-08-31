@@ -41,7 +41,7 @@ open class GuillotineTransitionAnimation: NSObject {
     open var mode: Mode = .presentation
     open var supportView: UIView?
     open var presentButton: UIView?
-    open var animationDuration = 0.6
+    open var animationDuration = 0.1
     
     //MARK: - Private properties
     fileprivate var chromeView: UIView?
@@ -171,6 +171,8 @@ open class GuillotineTransitionAnimation: NSObject {
 
     //MARK: - Observer
     override open func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
+        
+        
         if context == myContext {
             setupContainerMenuButtonFrameAndTopOffset()
         } else {
@@ -185,7 +187,7 @@ fileprivate extension GuillotineTransitionAnimation {
     fileprivate func animatePresentation(using context: UIViewControllerContextTransitioning) {
         menu = context.viewController(forKey: UITransitionContextViewControllerKey.to)!
         context.containerView.addSubview(menu.view)
-        
+        //横向
         if UIDeviceOrientationIsLandscape(UIDevice.current.orientation) || UIApplication.shared.statusBarOrientation == .landscapeLeft || UIApplication.shared.statusBarOrientation == .landscapeRight {
             updateChromeView()
             menu.view.addSubview(chromeView!)

@@ -21,7 +21,22 @@ class ViewController: UIViewController {
         navBar?.barTintColor = UIColor(red: 65.0 / 255.0, green: 62.0 / 255.0, blue: 79.0 / 255.0, alpha: 1)
         navBar?.titleTextAttributes = [NSForegroundColorAttributeName : UIColor.white]
     }
+    
+    @IBAction func showMenuAction(_ sender: UIButton) {
+        
+        let menuViewController = storyboard!.instantiateViewController(withIdentifier: "MenuViewController")
+        menuViewController.modalPresentationStyle = .custom
+        menuViewController.transitioningDelegate = self
+        
+        
+    }
 }
+
+extension ViewController: UIViewControllerTransitioningDelegate {
+
+    
+}
+
 
 extension ViewController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
 

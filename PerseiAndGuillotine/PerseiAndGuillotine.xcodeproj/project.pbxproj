@@ -12,6 +12,8 @@
 		3FFB9D491F56AC2800212CE6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FFB9D471F56AC2800212CE6 /* Main.storyboard */; };
 		3FFB9D4B1F56AC2800212CE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FFB9D4A1F56AC2800212CE6 /* Assets.xcassets */; };
 		3FFB9D4E1F56AC2800212CE6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FFB9D4C1F56AC2800212CE6 /* LaunchScreen.storyboard */; };
+		3FFB9D571F57A97F00212CE6 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFB9D561F57A97F00212CE6 /* MenuViewController.swift */; };
+		3FFB9D591F57AF4100212CE6 /* GuillotineTransitionAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFB9D581F57AF4100212CE6 /* GuillotineTransitionAnimation.swift */; };
 		B7923E391F5707F700F671B9 /* content_1@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B7923E321F5707F700F671B9 /* content_1@3x.png */; };
 		B7923E3A1F5707F700F671B9 /* content_2@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B7923E331F5707F700F671B9 /* content_2@3x.png */; };
 		B7923E3B1F5707F700F671B9 /* ic_activity@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B7923E341F5707F700F671B9 /* ic_activity@3x.png */; };
@@ -30,6 +32,8 @@
 		3FFB9D4A1F56AC2800212CE6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3FFB9D4D1F56AC2800212CE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3FFB9D4F1F56AC2800212CE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FFB9D561F57A97F00212CE6 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		3FFB9D581F57AF4100212CE6 /* GuillotineTransitionAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuillotineTransitionAnimation.swift; sourceTree = "<group>"; };
 		B7923E321F5707F700F671B9 /* content_1@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "content_1@3x.png"; sourceTree = "<group>"; };
 		B7923E331F5707F700F671B9 /* content_2@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "content_2@3x.png"; sourceTree = "<group>"; };
 		B7923E341F5707F700F671B9 /* ic_activity@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_activity@3x.png"; sourceTree = "<group>"; };
@@ -74,6 +78,7 @@
 				B7923E311F5707CD00F671B9 /* Resouses */,
 				3FFB9D431F56AC2800212CE6 /* AppDelegate.swift */,
 				3FFB9D451F56AC2800212CE6 /* ViewController.swift */,
+				3FFB9D561F57A97F00212CE6 /* MenuViewController.swift */,
 				3FFB9D471F56AC2800212CE6 /* Main.storyboard */,
 				3FFB9D4A1F56AC2800212CE6 /* Assets.xcassets */,
 				3FFB9D4C1F56AC2800212CE6 /* LaunchScreen.storyboard */,
@@ -100,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				B7923E411F57084600F671B9 /* ic_menu@3x.png */,
+				3FFB9D581F57AF4100212CE6 /* GuillotineTransitionAnimation.swift */,
 			);
 			path = GuillootineMenu;
 			sourceTree = "<group>";
@@ -186,6 +192,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3FFB9D461F56AC2800212CE6 /* ViewController.swift in Sources */,
+				3FFB9D591F57AF4100212CE6 /* GuillotineTransitionAnimation.swift in Sources */,
+				3FFB9D571F57A97F00212CE6 /* MenuViewController.swift in Sources */,
 				3FFB9D441F56AC2800212CE6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

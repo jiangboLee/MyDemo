@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="dQc-ez-d6H">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="dQc-ez-d6H">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -72,8 +72,18 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Activity" id="Imw-aO-Dto">
-                        <barButtonItem key="leftBarButtonItem" title="Item" image="ic_menu.png" id="n0r-Jy-Wm2">
-                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="tgf-wH-iyf">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="TU4-Yc-iYZ">
+                                <rect key="frame" x="16" y="11" width="16" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" image="ic_menu.png">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="showMenuAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eNn-8d-anL"/>
+                                </connections>
+                            </button>
                         </barButtonItem>
                     </navigationItem>
                 </viewController>
@@ -99,9 +109,136 @@
             </objects>
             <point key="canvasLocation" x="184.80000000000001" y="-545.57721139430294"/>
         </scene>
+        <!--Menu View Controller-->
+        <scene sceneID="4Aw-00-GOc">
+            <objects>
+                <viewController storyboardIdentifier="MenuViewController" modalPresentationStyle="currentContext" id="Pi6-yR-s0C" customClass="MenuViewController" customModule="PerseiAndGuillotine" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9eE-ft-nWE"/>
+                        <viewControllerLayoutGuide type="bottom" id="q4f-Ad-2V9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="AOW-PD-kCg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1iD-wf-29V">
+                                <rect key="frame" x="37.5" y="208.5" width="300" height="250"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cx7-5S-msQ">
+                                        <rect key="frame" x="54" y="202" width="200" height="40"/>
+                                        <accessibility key="accessibilityConfiguration" label="SETTINGS"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="ZsA-oW-uMB"/>
+                                            <constraint firstAttribute="height" constant="40" id="gi2-za-4rR"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                        <inset key="titleEdgeInsets" minX="50" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="SETTINGS" image="ic_settings@3x.png">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="menuButtonTapped:" destination="Pi6-yR-s0C" eventType="touchUpInside" id="ecv-89-zL1"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zZc-T2-cj6">
+                                        <rect key="frame" x="50" y="8" width="200" height="40"/>
+                                        <accessibility key="accessibilityConfiguration" label="PROFILE"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="FiC-ak-1Nf"/>
+                                            <constraint firstAttribute="width" constant="200" id="M7p-nO-8Mp"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                        <inset key="titleEdgeInsets" minX="50" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="PROFILE" image="ic_profile@3x.png">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="menuButtonTapped:" destination="Pi6-yR-s0C" eventType="touchUpInside" id="En3-6G-hfr"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8qf-9n-5HR">
+                                        <rect key="frame" x="50" y="56" width="200" height="40"/>
+                                        <accessibility key="accessibilityConfiguration" label="FEED"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="VtG-wb-mzG"/>
+                                            <constraint firstAttribute="height" constant="40" id="gWR-We-QqX"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                        <inset key="titleEdgeInsets" minX="50" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="FEED" image="ic_feed@3x.png">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="menuButtonTapped:" destination="Pi6-yR-s0C" eventType="touchUpInside" id="KGf-7B-OcW"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="odn-tx-vg8">
+                                        <rect key="frame" x="50" y="105" width="200" height="40"/>
+                                        <accessibility key="accessibilityConfiguration" label="ACTIVITY"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="cvg-Lh-nXo"/>
+                                            <constraint firstAttribute="width" constant="200" id="q1S-8x-vts"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                        <inset key="titleEdgeInsets" minX="50" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="ACTIVITY" image="ic_activity@3x.png">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="menuButtonTapped:" destination="Pi6-yR-s0C" eventType="touchUpInside" id="fin-p7-UId"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="odn-tx-vg8" firstAttribute="top" secondItem="8qf-9n-5HR" secondAttribute="bottom" constant="9" id="0tb-Ut-J0X"/>
+                                    <constraint firstItem="odn-tx-vg8" firstAttribute="centerX" secondItem="8qf-9n-5HR" secondAttribute="centerX" id="9Bx-Ve-PeA"/>
+                                    <constraint firstItem="zZc-T2-cj6" firstAttribute="centerX" secondItem="8qf-9n-5HR" secondAttribute="centerX" id="9tw-e6-M2u"/>
+                                    <constraint firstItem="cx7-5S-msQ" firstAttribute="centerX" secondItem="odn-tx-vg8" secondAttribute="centerX" constant="4" id="JHC-cS-T4s"/>
+                                    <constraint firstAttribute="width" constant="300" id="MC2-hV-XlS"/>
+                                    <constraint firstItem="8qf-9n-5HR" firstAttribute="top" secondItem="zZc-T2-cj6" secondAttribute="bottom" constant="8" id="NiP-Zt-0dm"/>
+                                    <constraint firstItem="zZc-T2-cj6" firstAttribute="top" secondItem="1iD-wf-29V" secondAttribute="top" constant="8" id="a4P-Qm-n12"/>
+                                    <constraint firstAttribute="centerX" secondItem="zZc-T2-cj6" secondAttribute="centerX" id="a5l-mn-Dro"/>
+                                    <constraint firstAttribute="height" constant="250" id="bXw-ep-Bbb"/>
+                                    <constraint firstAttribute="bottom" secondItem="cx7-5S-msQ" secondAttribute="bottom" constant="8" id="l7C-eJ-v6n"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uNZ-Bn-IgJ">
+                                <rect key="frame" x="158" y="473.5" width="59" height="34"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                <state key="normal" title="CLOSE">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="closeMenu:" destination="Pi6-yR-s0C" eventType="touchUpInside" id="r8p-R1-8oz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.25490196079999999" green="0.24313725489999999" blue="0.30980392159999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="1iD-wf-29V" secondAttribute="centerX" id="QFk-93-LDi"/>
+                            <constraint firstItem="uNZ-Bn-IgJ" firstAttribute="centerX" secondItem="AOW-PD-kCg" secondAttribute="centerX" id="bsu-e7-7TJ"/>
+                            <constraint firstAttribute="centerY" secondItem="1iD-wf-29V" secondAttribute="centerY" id="qOh-gX-rwZ"/>
+                            <constraint firstItem="uNZ-Bn-IgJ" firstAttribute="top" secondItem="1iD-wf-29V" secondAttribute="bottom" constant="15" id="zPa-lu-SNl"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5nZ-4n-S6O" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1855" y="137"/>
+        </scene>
     </scenes>
     <resources>
         <image name="content_1.png" width="16" height="16"/>
+        <image name="ic_activity@3x.png" width="16" height="16"/>
+        <image name="ic_feed@3x.png" width="16" height="16"/>
         <image name="ic_menu.png" width="16" height="16"/>
+        <image name="ic_profile@3x.png" width="16" height="16"/>
+        <image name="ic_settings@3x.png" width="16" height="16"/>
     </resources>
 </document>
